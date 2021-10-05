@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EQU-owaoy7Zx"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-HCt-Wtxy8Zn"
+      },
+      "source": [
+        "# WSL and SMB Mounts\n",
+        "I've enjoyed using WSL to use tools and teqs I like whn using Windows. I did have a problem though to mounting network shares in WSL. Sometimes they'd work, sometines they'd error. Weird.\n",
+        "\n",
+        "But I think I've worked out the cause. Mounts will only work if you've \"visited\" a share before starting WSL. \n",
+        "\n",
+        "WSL can be restarted with\n",
+        "> Get-Service LxssManager | Restart-Service\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mski-G-ty2LP"
+      },
+      "source": [
+        "## New Section"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "evirzwfMyqfE"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
